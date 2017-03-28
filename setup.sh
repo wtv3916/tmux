@@ -1,4 +1,5 @@
-YAN='\033[1;36m'
+#!/bin/bash
+CYAN='\033[1;36m'
 PURPLE='\033[1;35m'
 WHITE='\033[0;37m'
 YELLOW='\033[1;33m'
@@ -13,5 +14,5 @@ if [ "$?" -ne "0" ]; then
 fi
 
 echo -e "${PURPLE}Setting tmux source...${WHITE}"
-tmux source-file ~/tmux > /dev/null
+tmux source-file ~/.tmux.conf > /dev/null
 echo -e "${CYAN}Success!${WHITE}"
