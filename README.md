@@ -1,4 +1,4 @@
-git clone https://github.com/wtv3916/.tmux.conf ~/.tmux
+git clone https://github.com/wtv3916/tmux ~/.tmux
 
 cd ~/.tmux
 
