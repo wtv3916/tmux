@@ -4,12 +4,12 @@ WHITE='\033[0;37m'
 YELLOW='\033[1;33m'
 
 echo -e "${PURPLE}Installing tmux...${YELLOW}"
-ln -s ~/.tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.tmux/tmux.conf ~/tmux
 
 if [ "$?" -ne "0" ]; then
   echo -e "${PURPLE}~/tmux already exists, removing..."
   rm ~/.tmux.conf
-  ln -s ~/.tmux/tmux.conf ~/.tmux.conf
+  ln -s ~/.tmux/tmux.conf ~/tmux
 fi
 
 echo -e "${PURPLE}Setting tmux source...${WHITE}"
